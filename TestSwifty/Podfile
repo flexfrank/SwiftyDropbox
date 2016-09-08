@@ -2,4 +2,5 @@ use_frameworks!
 
 target "TestSwifty" do
     pod 'SwiftyDropbox', :path => '../'
+    pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
 end

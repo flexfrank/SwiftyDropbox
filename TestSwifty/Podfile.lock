@@ -1,19 +1,27 @@
 PODS:
-  - Alamofire (3.3.1)
+  - Alamofire (3.5.0)
   - SwiftyDropbox (3.2.0):
-    - Alamofire (~> 3.3.1)
+    - Alamofire (~> 3.5)
 
 DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
   - SwiftyDropbox (from `../`)
 
 EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
   SwiftyDropbox:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: bc197a65b6ce560599c8fc0816583ea6207988d3
+    :git: https://github.com/Alamofire/Alamofire.git
+
 SPEC CHECKSUMS:
-  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
-  SwiftyDropbox: fba9da0b1b72ae51edfeb1ee2a13aaef852ea6d7
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  SwiftyDropbox: d2511f798f0cbfb28db89c3a9d7e0f50f4594768
 
-PODFILE CHECKSUM: bf7b94a7c631267bee8c82615a3be1d9f7a12b2b
+PODFILE CHECKSUM: b659d981730478a1799f21f9ccc547c6a7db1ac7
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.beta.2

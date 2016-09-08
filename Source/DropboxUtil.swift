@@ -16,12 +16,12 @@ class DropboxServerTrustPolicyManager: ServerTrustPolicyManager {
             SecTrustSetAnchorCertificatesOnly(serverTrust, true)
             
             var isValid = false
-            var result = SecTrustResultType(kSecTrustResultInvalid)
+            var result = SecTrustResultType.Invalid
             let status = SecTrustEvaluate(serverTrust, &result)
             
             if status == errSecSuccess {
-                let unspecified = SecTrustResultType(kSecTrustResultUnspecified)
-                let proceed = SecTrustResultType(kSecTrustResultProceed)
+                let unspecified = SecTrustResultType.Unspecified
+                let proceed = SecTrustResultType.Proceed
                 
                 isValid = result == unspecified || result == proceed
             }
